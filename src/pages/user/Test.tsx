@@ -10,6 +10,8 @@ const Test = () => {
     const test = async () => {
       const result = await fetchUserPost();
       setTest(result);
+      // 로컬스토리지 확인
+      console.log("zustand persist", localStorage.getItem("test"));
     };
     test();
   }, []);
