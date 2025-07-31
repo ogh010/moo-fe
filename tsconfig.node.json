@@ -1,8 +1,13 @@
+/*
+tsconfig.node.json
+node.js와 관련된 옵션
+주로 vite, next.jsn storybook 같은 툴이 내부적으로 사용
+*/
 {
   "compilerOptions": {
     "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.node.tsbuildinfo",
-    "target": "ES2023",
-    "lib": ["ES2023"],
+    "target": "ES2023", // 최신 node.js 의 ES2023 문법 지원
+    "lib": ["ES2023"], // node 환경용 내장 객체 포함
     "module": "ESNext",
     "skipLibCheck": true,
 
