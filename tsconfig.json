@@ -13,11 +13,19 @@ tsconfig.json
     { "path": "./tsconfig.app.json" },
     { "path": "./tsconfig.node.json" }
   ],
-  // 절대경로 테스트
+  // alias  절대경로 테스트
   "compilerOptions": {
-    "baseUrl": ".", // 기준 경로 (보통 프로젝트 루트)
+    "baseUrl": ".",
     "paths": {
-      "@/*": ["src/*"] // @는 src 폴더를 가리킴
-    }
+      "@/*": ["./src/*"]
+    },
+    "moduleResolution": "node",
+
+    // mui 설정
+    "lib": ["es6", "dom"],
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "strictNullChecks": true,
+    "allowSyntheticDefaultImports": true
   }
 }
