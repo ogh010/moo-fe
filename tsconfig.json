@@ -1,7 +1,23 @@
+/*
+tsconfig.json
+타입스크립트 프로젝트의 핵심, 공통적인 설정을 정의하는 파일
+공통 설정 + 다른 tsconfig.*.json 포함하는 부모 설정
+주로 컴파일 설정, 전역 옵션, 참조 파일 목록 등 포함 
+tsconfig.json
+├── tsconfig.app.json    ← 브라우저 (React, UI 코드)
+└── tsconfig.node.json   ← Node (Vite, Jest, Storybook 설정 파일)
+*/
 {
   "files": [],
   "references": [
     { "path": "./tsconfig.app.json" },
     { "path": "./tsconfig.node.json" }
-  ]
+  ],
+  // 절대경로 테스트
+  "compilerOptions": {
+    "baseUrl": ".", // 기준 경로 (보통 프로젝트 루트)
+    "paths": {
+      "@/*": ["src/*"] // @는 src 폴더를 가리킴
+    }
+  }
 }
