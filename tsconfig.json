@@ -13,15 +13,19 @@ tsconfig.json
     { "path": "./tsconfig.app.json" },
     { "path": "./tsconfig.node.json" }
   ],
-  // alias  절대경로 테스트
   "compilerOptions": {
-    "baseUrl": ".",
+    /* Path Alias */
+    "baseUrl": "./",
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["src/*"],
+      "app/*": ["src/app/*"],
+      "pages/*": ["src/pages/*"],
+      "widgets/*": ["src/widgets/*"],
+      "features/*": ["src/features/*"],
+      "entities/*": ["src/entities/*"],
+      "shared/*": ["src/shared/*"]
     },
-    "moduleResolution": "node",
-
-    // mui 설정
+    // MUI 설정
     "lib": ["es6", "dom"],
     "noImplicitAny": true,
     "noImplicitThis": true,
