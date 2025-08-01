@@ -1,0 +1,10 @@
+{
+  "typescript.preferences.importModuleSpecifier": "non-relative",
+  "javascript.preferences.importModuleSpecifier": "non-relative"
+  // 임시
+  // "typescript.validate.enable": false,
+  // "javascript.validate.enable": false
+
+  // "javascript.suggest.autoImports": true,
+  // "typescript.suggest.autoImports": true
+}

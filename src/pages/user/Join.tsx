@@ -1,4 +1,4 @@
-import { useStore } from "../../entities/user/model/userStore";
+import { useStore } from "@/entities/user/model/userStore";
 
 type Props = {};
 

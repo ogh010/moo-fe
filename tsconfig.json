@@ -13,11 +13,23 @@ tsconfig.json
     { "path": "./tsconfig.app.json" },
     { "path": "./tsconfig.node.json" }
   ],
-  // 절대경로 테스트
   "compilerOptions": {
-    "baseUrl": ".", // 기준 경로 (보통 프로젝트 루트)
+    /* Path Alias */
+    "baseUrl": "./",
     "paths": {
-      "@/*": ["src/*"] // @는 src 폴더를 가리킴
-    }
+      "@/*": ["src/*"],
+      "app/*": ["src/app/*"],
+      "pages/*": ["src/pages/*"],
+      "widgets/*": ["src/widgets/*"],
+      "features/*": ["src/features/*"],
+      "entities/*": ["src/entities/*"],
+      "shared/*": ["src/shared/*"]
+    },
+    // MUI 설정
+    "lib": ["es6", "dom"],
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "strictNullChecks": true,
+    "allowSyntheticDefaultImports": true
   }
 }
