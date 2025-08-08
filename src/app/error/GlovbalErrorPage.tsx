@@ -1,8 +1,6 @@
 import { useRouteError, isRouteErrorResponse } from "react-router-dom";
 
-type Props = {};
-
-export default function GlovbalErrorPage({}: Props) {
+export default function GlovbalErrorPage() {
   const error = useRouteError();
   return (
     <>
