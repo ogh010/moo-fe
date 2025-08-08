@@ -1,8 +1,6 @@
 import CircularProgress from "@mui/material/CircularProgress";
 import { useLoadingStore } from "../model/loadingStore";
 
-type Props = {};
-
 const LodingBar = () => {
   const { loading } = useLoadingStore();
   return loading ? (

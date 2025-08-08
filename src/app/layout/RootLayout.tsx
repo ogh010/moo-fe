@@ -1,9 +1,7 @@
 import { Outlet } from "react-router-dom";
-import LodingBar from "../../shared/ui/LodingBar";
+import LodingBar from "../../shared/ui/ApiLoader";
 
-interface IAppProps {}
-
-export default function App(props: IAppProps) {
+export default function App() {
   return (
     <div>
       <div>header</div>
