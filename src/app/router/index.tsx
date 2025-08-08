@@ -3,6 +3,8 @@ import Test from "@/pages/user/Test";
 import RootLayout from "../layout/RootLayout";
 import GlovbalErrorPage from "../error/GlovbalErrorPage";
 import Join from "@/pages/user/Join";
+import Eslint from "@/pages/user/Eslint";
+
 /**
  * createBrowserRouter 정의
  */
@@ -15,6 +17,10 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <Test />,
+      },
+      {
+        path: "/readme",
+        element: <Eslint />,
       },
     ],
   },
