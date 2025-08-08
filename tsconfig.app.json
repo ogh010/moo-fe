@@ -25,7 +25,7 @@ jsx 설정, dom 관련 옵션 설정
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
 
-    /* Path Alias - 이 부분이 중요합니다! */
+    /* Path Alias */
     "baseUrl": "./",
     "paths": {
       "@/*": ["src/*"],
