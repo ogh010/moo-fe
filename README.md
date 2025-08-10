@@ -1,4 +1,6 @@
 <img width="1487" height="494" alt="image" src="https://github.com/user-attachments/assets/931112ac-ee15-4b11-b0d1-7d4311959e69" />
+<img width="1843" height="692" alt="image" src="https://github.com/user-attachments/assets/02eaff27-00f6-4765-975c-fed352dffff8" />
+
 
 
 # 💙🩵 React + TypeScript + Vite 🩶🤍
