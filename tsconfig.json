@@ -23,7 +23,8 @@ tsconfig.json
       "widgets/*": ["src/widgets/*"],
       "features/*": ["src/features/*"],
       "entities/*": ["src/entities/*"],
-      "shared/*": ["src/shared/*"]
+      "shared/*": ["src/shared/*"],
+      "assets/*": ["src/app/assets/*"]
     },
     // MUI 설정
     "lib": ["es6", "dom"],

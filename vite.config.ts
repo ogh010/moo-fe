@@ -23,6 +23,7 @@ export default defineConfig({
       features: path.resolve(__dirname, "./src/features"),
       entities: path.resolve(__dirname, "./src/entities"),
       shared: path.resolve(__dirname, "./src/shared"),
+      assets: path.resolve(__dirname, "./src/app/assets"),
     },
   },
 });
