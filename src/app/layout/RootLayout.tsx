@@ -1,13 +1,13 @@
 import { Outlet } from "react-router-dom";
-import LodingBar from "../../shared/ui/ApiLoader";
 import Header from "./Header";
 import Footer from "./Footer";
+import ApiLoader from "@/shared/ui/ApiLoader";
 
 export default function App() {
   return (
     <div>
+      <ApiLoader />
       <Header />
-      <LodingBar />
       <Outlet />
       <Footer />
     </div>
