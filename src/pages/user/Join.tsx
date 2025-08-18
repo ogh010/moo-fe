@@ -69,6 +69,11 @@ const Join = () => {
       return; // 모든 필드를 입력하지 않으면 회원가입 중단
     }
 
+    if (formData.userTel.length !== 11) {
+      alert("휴대폰 번호는 11자리 이어야 합니다");
+      return;
+    }
+
     try {
       let userBirth = formData.userBirth; // 생년월일 복사
       userBirth = userBirth.split("-").join(""); // 하이픈 제거
@@ -128,8 +133,18 @@ const Join = () => {
             name="userTel"
             onChange={handleInputChange}
             value={formData.userTel}
+            minLength={11}
+            maxLength={11}
           />
-          <div className="guide">- 없이 숫자만 입력</div>
+          <div className="guide">
+            - 없이 숫자만 입력
+            {formData.userTel && formData.userTel.length !== 11 && (
+              <span style={{ display: "inline-block", color: "#e53935" }}>
+                &nbsp; 휴대폰 번호는 11자리 이어야 합니다.
+              </span>
+            )}
+          </div>
+
           <div className="row">
             <div className="pw-toggle" style={{ flex: "1" }}>
               <input

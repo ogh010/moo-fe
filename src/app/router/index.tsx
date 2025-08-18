@@ -1,6 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
-import RootLayout from "../layout/RootLayout";
-import GlovbalErrorPage from "../error/GlovbalErrorPage";
+import RootLayout from "@/app/layout/RootLayout";
+import GlovbalErrorPage from "@/app/error/GlovbalErrorPage";
 import Join from "@/pages/test/Join";
 import { lazy, Suspense } from "react";
 import PageLoader from "@/shared/ui/PageLoader";
